@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <%- include('partials/head') %>
+    <title>Inicio</title>
+</head>
+
+<body>
+
+    <%- include('partials/navigation') %>
+
+    <div class="contenedor" id="contenedor">
+        <section class="description">
+            <h2>Hola!</h2>
+            <h1>Soy <span class="programadora"></span></h1>
+            <hr>
+            <p>Soy una persona creativa, organizada y apasionada por el aprendizaje continuo.</p>
+            <p>Mi compromiso con el desarrollo personal y profesional me impulsa a planificar y ejecutar proyectos
+                elaborados con excelencia y dedicación.</p>
+            <button><a href="#">Saber más</a></button>
+        </section>
+
+        <img src="/img/programadora.png" alt="Imagen Principal">
+    </div>
+
+    <h1 class="titulo" id="about">Sobre mi</h1>
+
+    <div class="contenedor-total">
+
+
+        <div class="contenedor-nombre">
+
+            <h1>Soy Briyit</h1>
+            <h1> Melany Capcha</h1>
+            <h1> Martinez</h1>
+
+            <hr>
+
+            <img src="/img/fotografia2.jpg" alt="">
+        </div>
+
+
+        <div class="contenedor-descripcion">
+
+            <div class="texto">
+                <p>Soy estudiante de Cibertec, actualmente en el tercer ciclo de la carrera de Computación e
+                    Informática.</p>
+                <p>Poseo sólidos conocimientos en mi área de estudio y estoy comprometida con mi desarrollo académico y
+                    profesional.</p>
+            </div>
+
+            <div class="lenguajes-titulo-contenedor">
+
+                <p>Lenguajes y Tecnologías:</p>
+
+                <div class="lenguajes-contenedor">
+
+                    <div class="lenguajes">
+                        <img src="/img/html.png" alt="">
+                        <p>HTML</p>
+                    </div>
+
+                    <div class="lenguajes">
+                        <img src="/img/css.png" alt="">
+                        <p>CSS</p>
+                    </div>
+
+                    <div class="lenguajes">
+                        <img src="/img/javascript.png" alt="">
+                        <p>JAVASCRIPT</p>
+                    </div>
+
+                    <div class="lenguajes">
+                        <img src="/img/react.png" alt="">
+                        <p>REACT</p>
+                    </div>
+
+                    <div class="lenguajes">
+                        <img src="/img/java.png" alt="">
+                        <p>JAVA</p>
+                    </div>
+
+                    <div class="lenguajes">
+                        <img src="/img/sql.png" alt="">
+                        <p>SQL server</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <h1 class="titulo" id="proyects">Proyectos</h1>
+
+    <main class="contenedor-total-proyectos">
+
+        <section class="contenedor-proyecto">
+
+            <div class="proyecto">
+                <img src="../img/vaquita-proyecto.jpg" alt="Proyecto Vaquita">
+                <div class="proyecto-texto">
+                    <h3>Proyecto Vaquita</h3>
+                    <p>Proyecto de una página web para una distribuidora de leche con HTML, CSS y JavaScript.</p>
+                    <a href="https://github.com/BriMelany/Proyecto_Vaquita" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <img src="/img/sistema_venta.jpg" alt="Sistema_Ventas">
+                <div class="proyecto-texto">
+                    <h3>Proyecto Sistema de Televisores</h3>
+                    <p>CRUD de Televisores con Java en Eclipse.</p>
+                    <a href="https://github.com/BriMelany/ClaseSistema_java_televisores" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <img src="/img/proyecto-java.jpg" alt="Proyecto CRM">
+                <div class="proyecto-texto">
+                    <h3>Proyecto CRM</h3>
+                    <p>Sistema de escritorio con Java en Eclipse.</p>
+                    <a href="https://github.com/BriMelany/Proyecto_CRM_java" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <img src="/img/proyecto-springboot.jpg" alt="Proyecto Mueblería">
+                <div class="proyecto-texto">
+                    <h3>Proyecto Mueblería</h3>
+                    <p>Aplicación en Spring Boot con CRUD en Java para una mueblería.</p>
+                    <a href="https://github.com/BriMelany/ProyectoTiendaCrud" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <div class="contacto" id="contact">
+        <section class="contacto-principal" id="Contact">
+            <div class="contact-text">
+                <h2>Contacto</h2>
+                <h4>Trabajemos juntos!</h4>
+                <div class="contact-list">
+                    <li><i class="fa-regular fa-envelope"></i>briyitmelanycapcha@gmail.com</li>
+                    <li><i class="fa-solid fa-phone"></i>939394026</li>
+                </div>
+                <div class="contact-icons">
+                    <a href="https://github.com/BriMelany" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/midhun-v-s" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+
+    <script>
+
+        const abrirMenu = document.getElementById('abrir');
+        const nav = document.getElementById('nav');
+        const body = document.getElementById("contenedor")
+
+        abrirMenu.addEventListener('click', () => {
+            nav.classList.toggle('visible');
+            body.classList.toggle('menu-visible');
+        });
+
+
+        var typed = new Typed(".programadora", {
+            strings: ["Programadora"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true
+        });
+
+        const menuLinks=document.querySelectorAll('.nav a[href^="#"]')
+
+        menuLinks.forEach(menuLink=>{
+           menuLink.addEventListener("click",()=>{
+            nav.classList.remove('visible')
+           })
+        })
+
+
+    </script>
+
+
+
+</body>
+
+</html>
